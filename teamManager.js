@@ -7,12 +7,10 @@ function player (name, position, offense, defense, goodGame, badGame) {
     this.defense = defense; 
     this.goodGame = goodGame;
     this.badGame = badGame; 
-
     this.printStats = function () {
         console.log("Name :" + this.name + "\nPosition :" + this.position + "\nOffence : " + this.offense + "\nDefence :" + this.defence + "\nGood Game:" + this.goodGame + "\nBad Game :" + this.badGame)
     };
 } 
-
 var count = 0;
 function createTeam () {
 if (count>5) {
@@ -42,7 +40,7 @@ if (count>5) {
         createTeam(),
     )
 })
-}     else {console.log("All question asked!")} 
+}  else {console.log("All question asked!")} 
 
 }; 
 createTeam(); 
